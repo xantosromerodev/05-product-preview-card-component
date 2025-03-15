@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- etiquetas meta -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Santos Romero">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/reducido.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!-- titulo -->
+    <title>Product Preview Card Component | 100DaysOfProjects</title>
+</head>
+
+<body>
+
+    <section class="container-fluid d-flex justify-content-center align-items-center vh-100 bg-secondary">
+        <div class="card shadow rounded-3" style="width: 600px;">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <picture>
+                        <source srcset="images/image-product-desktop.jpg"
+                            media="(min-width: 768px)">
+                        <img src="images/image-product-mobile.jpg" class="img-fluid rounded-start" alt="Ejemplo de imagen responsive">
+                    </picture>
+                </div>
+                <div class="col-12 col-sm-6 p-4">
+                    <span class="text-uppercase">Perfume</span>
+                    <h3 class="fw-bold text-primary mt-3">Gabrielle Essence Eau De Parfum</h1>
+                        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                            Perfumer-Creator for the House of CHANEL.</p>
+                        <div class="d-flex justify-content-start align-items-center my-4">
+                            <span class="fs-4 fw-bold text-success font-price">$149.99</span>
+                            <small class="ms-3"><del>$169.99</del></small>
+                        </div>
+                        <button type="button" class="btn btn-success d-block w-100">
+                            <i class="bi bi-cart3"></i>
+                            Add to Cart
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
